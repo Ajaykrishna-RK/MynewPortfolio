@@ -3,7 +3,7 @@ const SocialMediaIcons = () => {
     <div className="flex justify-center md:justify-start my-10 gap-7">
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.linkedin.com"
+        href="https://www.linkedin.com/in/ajay-krishna-730488229/"
         target="_blank"
         rel="noreferrer"
       >
@@ -11,27 +11,36 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.twitter.com"
+        href="mailto:ajaykrishnark73@gmail.com" 
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="twitter-link" src="../assets/twitter.png" />
+        <img alt="twitter-link"  style={{height:'30px'}} src="../assets/email.png" />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.facebook.com"
+        href="https://github.com/Ajaykrishna-RK?tab=repositories"
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="facebook-link" src="../assets/facebook.png" />
+        <img alt="facebook-link" style={{height:'30px'}} src="../assets/GitHub-.png" />
+      </a>
+     
+      <a
+        className="hover:opacity-50 transition duration-500"
+        href="tel:7356970172"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img alt="facebook-link" style={{height:'30px'}} src="../assets/phone_s.png" />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.instagram.com"
+        href="https://wa.me/7356970172"
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="instagram-link" src="../assets/instagram.png" />
+        <img alt="facebook-link" style={{height:'30px'}} src="../assets/WhatsApp.svg.png" />
       </a>
     </div>
   );

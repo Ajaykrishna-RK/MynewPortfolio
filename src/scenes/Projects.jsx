@@ -1,5 +1,6 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import {projectsdetails} from "../Projects"
 
 const container = {
   hidden: {},
@@ -21,7 +22,7 @@ const Project = ({ title }) => {
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div variants={projectVariant} className="relative">
+    <motion.div variants={projectVariant} className="relative ">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">
@@ -36,7 +37,7 @@ const Project = ({ title }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-48 pb-48">
+    <section id="projects" className="project-section"  >
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"
@@ -57,46 +58,62 @@ const Projects = () => {
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
+        {/* <p className="mt-10 mb-10">
           Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
           fames odio in at. At magna ornare dictum lectus. Purus massa morbi
           purus nec eget eleifend ut elit.
-        </p>
+        </p> */}
       </motion.div>
 
       {/* PROJECTS */}
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-10">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
-          variants={container}
+          className=""
+         
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0 },
+          }}
         >
           {/* ROW 1 */}
-          <div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            BEAUTIFUL USER INTERFACES
-          </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
 
-          {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+          <motion.div className="grid md:grid-cols-3 justify-center items-center m-0">
+            {projectsdetails.map((item)=>(
+              
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
 
-          {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
-          <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SMOOTH USER EXPERIENCE
-          </div>
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">{item?.name}</div>
+        <li class=" text-base">
+         {item?.title1}
+        </li>
+        <li class=" text-base">
+      {item?.title2}
+        </li>
+        <li class="text-base">
+         {item?.title3}
+        </li>
+        <li class=" text-base">
+         {item?.title4}
+        </li>
+{item?.title5 &&  <li class=" text-base">
+         {item?.title5}
+        </li> }
+       
+<li><a    target="_blank" href={item?.github}>Github: {item?.github}</a></li>
+
+      </div>
+      
+      </div>
+            ))}
+    
+          </motion.div>
+   
+      
         </motion.div>
       </div>
     </section>

@@ -10,6 +10,8 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 import Testimonials from "./scenes/Testimonials";
 import { motion } from "framer-motion";
+import Experience from "./scenes/Experience";
+import './index.css'
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -58,6 +60,7 @@ function App() {
           onViewportEnter={() => setSelectedPage("skills")}
         >
           <MySkills />
+        
         </motion.div>
       </div>
       <LineGradient />
@@ -71,15 +74,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("testimonials")}
-        >
-          <Testimonials />
-        </motion.div>
-      </div>
+    
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
