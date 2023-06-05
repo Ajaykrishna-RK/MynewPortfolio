@@ -81,10 +81,10 @@ const Projects = () => {
         >
           {/* ROW 1 */}
 
-          <motion.div className="grid md:grid-cols-3 justify-center items-center m-0">
+          <motion.div className="grid md:grid-cols-3 justify-center items-center gap-5">
             {projectsdetails.map((item)=>(
               
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <div class="max-w-sm h-80 rounded overflow-hidden shadow-lg bg-slate-500">
 
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">{item?.name}</div>

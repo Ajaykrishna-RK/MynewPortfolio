@@ -81,8 +81,8 @@ const MySkills = () => {
 <p className="font-playfair font-semibold text-4xl mt-5 mb-5">MY <span className="text-red ">EXPERIENCE</span></p>
 </div>
      
-      <div className="grid md:grid-cols-2 mt-10">
-        <div class=" rounded overflow-hidden shadow-lg">
+      <div className="grid md:grid-cols-2 mt-10 gap-5">
+        <div class=" rounded overflow-hidden shadow-lg bg-red">
           <div class="px-6 py-4">
             <div class="font-bold text-2xl mb-2">
             
@@ -110,7 +110,7 @@ const MySkills = () => {
         </div>
 
 
-        <div class=" rounded overflow-hidden shadow-lg">
+        <div class=" rounded overflow-hidden shadow-lg  bg-red">
           <div class="px-6 py-4">
             <div class="font-bold text-2xl mb-2">
             
