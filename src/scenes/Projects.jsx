@@ -88,7 +88,8 @@ const Projects = () => {
 
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">{item?.name}</div>
-        <li class=" text-base">
+        <ul style={{listStyleType:"circle"}} className="ml-5">
+        <li >
          {item?.title1}
         </li>
         <li class=" text-base">
@@ -105,6 +106,8 @@ const Projects = () => {
         </li> }
        
 <li><a    target="_blank" href={item?.github}>Github: {item?.github}</a></li>
+        </ul>
+      
 
       </div>
       

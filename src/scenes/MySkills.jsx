@@ -94,18 +94,21 @@ const MySkills = () => {
             <p className="text-xs mb-2"> feb-2023 (present) </p>
             
             <p className=" mb-2">Deepflow-Expert</p>
+            <ul style={{listStyleType:"circle"}} className="ml-5">
             <li>It is a start-up Project</li>
 
-            <li>Worked on the API Integration</li>
+<li>Worked on the API Integration</li>
 
-                
-            <p className=" mt-2">Family Tree</p>
-            <li className=" mt-2">It is a family website project</li>
-      
-     
-            <p className=" mt-2">Listing App</p>
-            <li className=" mt-2">It is a Dashboard for showing the users Lists,subscriptions etc..</li>
+    
+<p className=" mt-2">Family Tree</p>
+<li className=" mt-2">It is a family website project</li>
 
+
+<p className=" mt-2">Listing App</p>
+<li className=" mt-2">It is a Dashboard for showing the users Lists,subscriptions etc..</li>
+
+            </ul>
+           
           </div>
         </div>
 
@@ -120,7 +123,8 @@ const MySkills = () => {
             </div>
             <div class="font-bold text-xl mb-2">WebSoullabs</div>
             <p className="text-xs mb-2"> Aug-2022 feb-2023</p>
-            
+            <ul style={{listStyleType:"circle"}} className="ml-5">
+
             <p className=" mb-2">Internmantra</p>
        <li>It is a Internship and online traning platform . This website helps students find internships and help them get the best possible start to their careers</li>
 
@@ -129,6 +133,8 @@ const MySkills = () => {
 
             <p className=" mb-2">D2d pro</p>
        <li>Created the front end of the project </li>
+            </ul>
+   
 
                 
 
