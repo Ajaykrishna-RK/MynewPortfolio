@@ -23,7 +23,7 @@ const Landing = ({ setSelectedPage }) => {
             style={{borderTopLeftRadius:"400px",borderTopRightRadius:"400px"}}
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[300px] before:rounded-t-[300px]"
-              src="assets/profile-2.JPG"
+              src="assets/20230115120046__MG_7791.jpg"
             />
           </div>
         ) : (
